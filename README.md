@@ -1,6 +1,6 @@
 # Presenter Mode
 
-[![Build status](https://ci.appveyor.com/api/projects/status/j8mx6l6c97yemm2t?svg=true)](https://ci.appveyor.com/project/madskristensen/codetourvs)
+[![Build status](https://ci.appveyor.com/api/projects/status/igy94217gmxtw8le?svg=true)](https://ci.appveyor.com/project/madskristensen/presentermode)
 
 A one-click button for entering presntation mode which resets fonts, themes, tool windows and resizes Visual Studio itslft. Great for video recordings and screen captures.A one
 

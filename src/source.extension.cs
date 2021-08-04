@@ -13,6 +13,6 @@ namespace PresenterMode
         public const string Language = "en-US";
         public const string Version = "1.0";
         public const string Author = "Mads Kristensen";
-        public const string Tags = "";
+        public const string Tags = "theme, presentation, font";
     }
 }
