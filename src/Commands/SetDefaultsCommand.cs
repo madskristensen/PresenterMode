@@ -1,4 +1,8 @@
-﻿namespace PresenterMode
+﻿using System.Threading.Tasks;
+using Community.VisualStudio.Toolkit;
+using Microsoft.VisualStudio.Shell;
+
+namespace PresenterMode
 {
     [Command(PackageIds.SetDefaults)]
     internal sealed class SetDefaultsCommand : BaseCommand<SetDefaultsCommand>
