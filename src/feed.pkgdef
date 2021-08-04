@@ -1,0 +1,7 @@
+﻿; Replace URL with any local, UNC or URI path
+; To create a custom gallery feed to host your extension, see https://github.com/madskristensen/PrivateGalleryCreator
+[$RootKey$\ExtensionManager\Repositories\{45a93cb9-a46d-4e41-a3d9-148d3c880f9a}]
+@="https://www.vsixgallery.com/feed/extension/RecordingDefaults.aa418e38-6c48-42a8-b461-a575b9e4f26a"
+"Priority"=dword:00000064
+"Protocol"="Atom Feed"
+"DisplayName"="Presenter Mode CI"
