@@ -22,11 +22,13 @@ namespace PresenterMode
             }
 
             await VS.StatusBar.ShowMessageAsync("Resizing window...");
+            
+            Application.Current.MainWindow.WindowState = WindowState.Normal;
 
             if (PresentationSource.FromVisual(Application.Current.MainWindow) is HwndSource source)
             {
                 IntPtr handle = source.Handle;
-                MoveWindow(handle, 0, 0, settings.Width, settings.Height, true);
+                MoveWindow(handle, 0, 0, settings.Width, settings.Height, false);
             }
         }
     }
