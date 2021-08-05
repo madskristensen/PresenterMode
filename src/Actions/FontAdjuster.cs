@@ -6,6 +6,7 @@ using Microsoft;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
+using Microsoft.VisualStudio.Threading;
 
 namespace PresenterMode
 {
@@ -38,6 +39,11 @@ namespace PresenterMode
             // Open document to set zoom level
             DocumentView doc = await VS.Documents.OpenAsync(path);
             doc.TextView.ZoomLevel = settings.ZoomLevel;
+
+            // This will apply the zoom level to all open documents.
+            EnvDTE80.DTE2 dte = await VS.GetRequiredServiceAsync<EnvDTE.DTE, EnvDTE80.DTE2>();
+            dte.ExecuteCommand("View.ZoomIn");
+            dte.ExecuteCommand("View.ZoomOut");
 
             // And close the document when done
             await doc?.WindowFrame.CloseFrameAsync(FrameCloseOption.NoSave);
