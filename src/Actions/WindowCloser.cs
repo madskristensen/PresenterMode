@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Community.VisualStudio.Toolkit;
 
@@ -8,12 +7,13 @@ namespace PresenterMode
 {
     public class WindowCloser
     {
-        private static readonly Guid[] _windowGuidsToKeep = new[] {
-           new Guid(WindowGuids.SolutionExplorer),
-           new Guid(WindowGuids.GitChanges),
-           new Guid(WindowGuids.GitRepository),
-           new Guid(WindowGuids.ErrorList),
-           new Guid(WindowGuids.OutputWindow)
+        private static readonly Dictionary<Guid, bool> _windowGuidsToKeep = new()
+        {
+            { new Guid(WindowGuids.SolutionExplorer), true },
+            { new Guid(WindowGuids.GitChanges), true },
+            { new Guid(WindowGuids.GitRepository), true },
+            { new Guid(WindowGuids.ErrorList), false },
+            { new Guid(WindowGuids.OutputWindow), false }
         };
 
         public static async Task ApplyAsync()
@@ -31,9 +31,9 @@ namespace PresenterMode
 
             foreach (WindowFrame window in windows)
             {
-                if (!_windowGuidsToKeep.Contains(window.Guid))
+                if (!_windowGuidsToKeep.ContainsKey(window.Guid))
                 {
-                    await window.CloseFrameAsync(FrameCloseOption.NoSave);
+                    await window.HideAsync();
                 }
             }
         }

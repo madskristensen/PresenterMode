@@ -11,7 +11,7 @@ namespace PresenterMode
     public class General : BaseOptionModel<General>
     {
         [Category("Font size")]
-        [DisplayName("Adjust font size")]
+        [DisplayName("Enable font size adjustment")]
         [Description("Changes the font size")]
         [DefaultValue(true)]
         public bool AdjustFontSize { get; set; } = true;
@@ -23,7 +23,7 @@ namespace PresenterMode
         public int ZoomLevel { get; set; } = 140;
 
         [Category("Theme")]
-        [DisplayName("Adjust theme")]
+        [DisplayName("Enable theme selection")]
         [Description("Changes the theme")]
         [DefaultValue(true)]
         public bool AdjustTheme { get; set; } = true;
@@ -31,8 +31,8 @@ namespace PresenterMode
         [Category("Theme")]
         [DisplayName("Theme")]
         [Description("Determines what theme to apply")]
-        [DefaultValue(Theme.Blue)]
-        public Theme Theme { get; set; } = Theme.Blue;
+        [DefaultValue(Theme.Dark)]
+        public Theme Theme { get; set; } = Theme.Dark;
 
         [Category("Windows")]
         [DisplayName("Close tool windows")]
@@ -41,7 +41,7 @@ namespace PresenterMode
         public bool CloseWindows { get; set; } = true;
 
         [Category("Resize")]
-        [DisplayName("Resize Visual Studio")]
+        [DisplayName("Enable window resizing")]
         [Description("Resizes the main window of Visual Studio.")]
         [DefaultValue(true)]
         public bool ResizeVisualStudio { get; set; } = true;
