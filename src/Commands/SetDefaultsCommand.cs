@@ -33,7 +33,7 @@ namespace PresenterMode
             await WindowCloser.ApplyAsync();
             await Task.Yield();
 
-            await VS.StatusBar.ShowMessageAsync("Presenter Mode applied.");
+            await VS.StatusBar.ClearAsync();
         }
     }
 }
