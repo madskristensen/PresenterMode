@@ -5,7 +5,7 @@
 A one-click button for entering presntation mode which resets fonts, themes, tool windows and resizes Visual Studio itself. Great for video recordings and screen captures.
 
 Download this extension from the [Marketplace](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.PresenterMode)
-or get the [CI build](RecordingDefaults.aa418e38-6c48-42a8-b461-a575b9e4f26a).
+or get the [CI build](https://www.vsixgallery.com/extension/RecordingDefaults.aa418e38-6c48-42a8-b461-a575b9e4f26a).
 
 -----------------------------------------
 

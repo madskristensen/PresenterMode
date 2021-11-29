@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel;
-using Community.VisualStudio.Toolkit;
 
 namespace PresenterMode
 {
@@ -31,8 +30,8 @@ namespace PresenterMode
         [Category("Theme")]
         [DisplayName("Theme")]
         [Description("Determines what theme to apply")]
-        [DefaultValue(Theme.Dark)]
-        public Theme Theme { get; set; } = Theme.Dark;
+        [DefaultValue(Theme.Light)]
+        public Theme Theme { get; set; } = Theme.Light;
 
         [Category("Windows")]
         [DisplayName("Close tool windows")]
