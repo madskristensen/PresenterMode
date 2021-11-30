@@ -31,8 +31,8 @@ namespace PresenterMode
         [Category("Theme")]
         [DisplayName("Theme")]
         [Description("Determines what theme to apply")]
-        [DefaultValue(Theme.Light)]
-        public Theme Theme { get; set; } = Theme.Light;
+        [DefaultValue(Theme.Blue)]
+        public Theme Theme { get; set; } = Theme.Blue;
 
         [Category("Windows")]
         [DisplayName("Close tool windows")]
