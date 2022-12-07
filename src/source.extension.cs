@@ -9,7 +9,7 @@ namespace PresenterMode
     {
         public const string Id = "RecordingDefaults.aa418e38-6c48-42a8-b461-a575b9e4f26a";
         public const string Name = "Presenter Mode";
-        public const string Description = @"A one-click button for entering presntation mode which resets fonts, themes, tool windows and resizes Visual Studio itself. Great for video recordings and screen captures.";
+        public const string Description = @"A one-click button for entering presentation mode which resets fonts, themes, tool windows and resizes Visual Studio itself. Great for video recordings and screen captures.";
         public const string Language = "en-US";
         public const string Version = "1.1";
         public const string Author = "Mads Kristensen";
